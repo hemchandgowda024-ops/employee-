@@ -71,12 +71,9 @@ public class EmployeeSalaryCalculatorTest {
     }
 
     // Test 10: Small positive salary
-
-@Test
-void testSmallSalary() {
-    assertEquals(-198.82,
-        EmployeeSalaryCalculator.calculateNetSalary(1), 0.01);
-}
-
+    @Test
+    void testSmallSalary() {
+        assertEquals(-198.82,
+            EmployeeSalaryCalculator.calculateNetSalary(1), 0.01);
     }
-
+}
