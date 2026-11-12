@@ -45,6 +45,19 @@
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-jar-plugin</artifactId>
+    <version>3.4.2</version>
+    <configuration>
+        <archive>
+            <manifest>
+                <mainClass>com.example.employee.EmployeeSalaryCalculator</mainClass>
+            </manifest>
+        </archive>
+    </configuration>
+</plugin>
+
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
@@ -64,6 +77,7 @@
           <version>3.3.0</version>
         </plugin>
         <plugin>
+        
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.4.2</version>
         </plugin>
@@ -86,5 +100,21 @@
         </plugin>
       </plugins>
     </pluginManagement>
+    
+<plugins>
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.4.2</version>
+        <configuration>
+            <archive>
+                <manifest>
+                    <mainClass>com.example.employee.EmployeeSalaryCalculator</mainClass>
+                </manifest>
+            </archive>
+        </configuration>
+    </plugin>
+</plugins>
+
   </build>
 </project>
